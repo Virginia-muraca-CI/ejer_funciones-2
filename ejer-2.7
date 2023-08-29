@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float Divi(int uni,int precio){
+    float des=0;
+    
+    if (uni>6){
+        
+    des=precio-(0.04*precio);
+    return des;
+}   else if (uni>12){
+    des=precio-(0.10*precio);
+    return des;
+}
+}
+
+int main() {
+int uni=0,precio=0;
+float divi=0;
+
+printf("Ingrese la cantidad de productos que a comprado:");
+scanf("%d",&uni);
+printf("Ingrese el precio de los productos que a comprado:");
+scanf("%d",&precio);
+
+divi = Divi(uni,precio);
+printf("Su compra es de %.2f",divi);
+return 0;
+}
