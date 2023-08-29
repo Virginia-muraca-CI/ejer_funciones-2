@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int noc(int num){
+    int res=0;
+    res=(num*num)-(2*num);
+    printf("el serultado de la resta del doble del numero ingresado a su cuadrado es de %d",res);
+}
+int main()
+{ int num=0;
+
+    printf("ingrese un numero entero:");
+    scanf("%d",&num);
+    
+    noc(num);
+
+    return 0;
+}
